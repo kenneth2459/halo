@@ -13,7 +13,7 @@
 				</div>
 			</div>
 			<div class="col-xxl-4 col-lg-6">
-				<?php query_posts('post_type=carousel&post_per_page=-1') ?>
+				<?php query_posts('post_type=carousel&posts_per_page=-1') ?>
 				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
 				  <div class="carousel-inner">
 				  	<?php 
@@ -31,6 +31,7 @@
 				      <?php the_post_thumbnail('full', array('class'=>'img-fluid')); ?>
 				    </div>
 				    <?php endwhile; ?>
+				    <?php wp_reset_query(); ?>
 				  </div>
 				</div>
 			</div>

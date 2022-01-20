@@ -20,7 +20,7 @@ function register_custom_types() {
 
 		'add_new' => _x('Add new', 'Image'),
 
-		'add_new_item' => __('Ad new image'),
+		'add_new_item' => __('Add new image'),
 
 		'edit_item' => __('Edit image'),
 
@@ -81,6 +81,79 @@ function register_custom_types() {
 
 
 	  register_post_type( 'carousel' , $args_carousel );
+
+
+	  $labels_album = array(
+
+		'name' => _x('Album', 'post type general name'),
+
+		'singular_name' => _x('Album', 'post type singular name'),
+
+		'all_items' => __('See all albums'),
+
+		'add_new' => _x('Add new', 'Album'),
+
+		'add_new_item' => __('Add new Album'),
+
+		'edit_item' => __('Edit Album'),
+
+		'new_item' => __('New Album'),
+
+		'view_item' => __('View Album'),
+
+		'search_items' => __('Search Album'),
+
+		'not_found' =>  __('Not found Album'),
+
+		'not_found_in_trash' => __('Not found in the trash'),
+
+		'parent_item_colon' => ''
+
+	);
+
+
+
+	$args_albums = array(
+
+		'labels'             => $labels_album,
+
+		'description'        => 'Albums',
+
+		'public'             => true,
+
+		'publicly_queryable' => true,
+
+		'show_ui'            => true,
+
+		'query_var'          => true,
+
+		'menu_icon'          => null,
+
+		'rewrite'            => true,
+
+		'capability_type'    => 'post',
+
+		'hierarchical'       => false,
+
+		'menu_position'      => null,
+
+		'show_in_menu'       => true,
+
+		'show_in_nav_menus'  => true,
+
+		//'taxonomies'         => array('category'),	
+
+		'rewrite'            => array('slug' => 'albums'), 
+
+		'supports'           => array('title','thumbnail', 'custom-fields'),
+
+		'has_archive'        => true,
+
+	  );
+
+
+
+	  register_post_type( 'albums' , $args_albums );
 
 	  
 

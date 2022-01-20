@@ -6,6 +6,40 @@
 					Releases
 				</h2>
 			</div>
+			<div class="col-lg-6">
+				<?php query_posts('post_type=albums&posts_per_page=1') ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<div class="text-center">
+						<?php the_post_thumbnail('full', array ( "class"=>"img-fluid" ) ); ?>
+					</div>
+				<?php endwhile; ?>
+			</div>
+			<div class="col-lg-6">
+				<div class="row">
+					<?php query_posts('post_type=albums&posts_per_page=4&offset=1') ?>
+					<?php $cont=0; ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php 
+							$cont++ ; 
+							if($cont>2){
+								$margin = "margin-top-sm";
+							}else{
+								$margin = "";
+							}
+						?>
+						<div class="col-lg-6">
+							<div class="text-center <?php echo $margin; ?>">
+								<?php the_post_thumbnail('full', array ( "class"=>"img-fluid" ) ); ?>
+							</div>
+						</div>
+					<?php endwhile; ?>
+				</div>
+			</div>
+			<div class="col-lg-12 margin-top-lg margin-bottom-lg">
+				<a href="" class="btn btn-link btn-yellow float-end hvr-sweep-to-top margin-top-lg">
+					View All Releases
+				</a>
+			</div>
 		</div>
 	</div>
 </section>

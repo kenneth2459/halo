@@ -182,6 +182,20 @@ SECTION ALBUMS
         text-shadow: none;
     }
 }
+.btn-yellow{
+	background: #F6C82A;
+	border-radius: 21px;
+	color: #000000;
+	font-family: Sen;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	text-decoration: none;
+}
+.hvr-sweep-to-top:before, .hvr-sweep-to-top:active, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:hover{
+	background: #000000;
+    color: #F6C82A;
+    border-radius: 21px !important;
 }
 /*
 MEDIA QUERIES
