@@ -1,7 +1,7 @@
 <section class="bk-albums padding-top-lg padding-bottom-lg">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 padding-top-lg paddong-bottom-lg">
+			<div class="col-md-12 padding-top-lg padding-bottom-lg">
 				<h2 class="title-white-bk-transparent">
 					Releases
 				</h2>
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 			<div class="col-lg-12 margin-top-lg margin-bottom-lg">
-				<a href="" class="btn btn-link btn-yellow float-end hvr-sweep-to-top margin-top-lg">
+				<a href="" class="btn btn-link btn-yellow float-end hvr-sweep-to-top margin-top-lg uppercase">
 					View All Releases
 				</a>
 			</div>

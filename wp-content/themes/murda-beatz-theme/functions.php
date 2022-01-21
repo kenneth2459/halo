@@ -69,6 +69,12 @@ function kr_scripts() {
     wp_register_style( 'hover', PATH.'/css/hover.min.css',array(), null  );   
     wp_enqueue_style( 'hover' );
 
+    wp_register_style( 'owl', PATH.'/dist/assets/owl.carousel.min.css',array(), null  );   
+    wp_enqueue_style( 'owl' );
+
+    wp_register_style( 'default-owl', PATH.'/dist/assets/owl.theme.default.min.css',array(), null  );   
+    wp_enqueue_style( 'default-owl' );
+
     wp_register_style( 'styles', get_stylesheet_uri(),array(), null  );   
     wp_enqueue_style( 'styles' );    
 
@@ -87,6 +93,8 @@ function kr_scripts() {
     wp_register_script( 'wow', PATH.'/js/wow.min.js', array('jquery'),null,true);
     wp_enqueue_script('wow');
 
+    wp_register_script( 'owl', PATH.'/dist/owl.carousel.min.js', array('jquery'),null,true);
+    wp_enqueue_script('owl');
 
     wp_register_script( 'app', PATH.'/js/apps.js', array('jquery'),null,true);
     wp_enqueue_script('app');

@@ -17,7 +17,7 @@ License URI: license.txt
 .font-sedgwick{
 	font-family: 'Sedgwick Ave', cursive;
 }
-h1, h2, h3, h4, h5, h6, p  { font-family: 'Open Sans', sans-serif;}
+h1, h2, h3, h4, h5, h6, p  { font-family: 'Sen', sans-serif;}
 
 .margin-top-sm{
 	margin-top:10px;
@@ -118,6 +118,7 @@ CAROUSEL SECTION
 	text-decoration: none;
 	font-weight: 800;
 	font-size: 20px;
+	width: 300px;
 }
 .btn-black:hover{
 	color: #fec806 !important;
@@ -153,7 +154,7 @@ ul.social li a{
 SECTION ALBUMS
 */
 .bk-albums{
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.7) 40%);
+	background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.8) 40%);
 }
 .title-white-bk-transparent {
 	font-family: Sen;
@@ -165,7 +166,7 @@ SECTION ALBUMS
 	align-items: center;
 	letter-spacing: 14px;
 	text-transform: uppercase;
-    color: #000000b3; /* Unfortunately you can't use transparent here … */
+    color: #000000cc; /* Unfortunately you can't use transparent here … */
     text-shadow:
      -1px -1px 0 #fff,  
     1px -1px 0 #fff,
@@ -191,11 +192,245 @@ SECTION ALBUMS
 	font-weight: 800;
 	font-size: 20px;
 	text-decoration: none;
+	width: 300px;
 }
 .hvr-sweep-to-top:before, .hvr-sweep-to-top:active, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:hover{
 	background: #000000;
     color: #F6C82A;
     border-radius: 21px !important;
+}
+/*
+SECTION TOUR
+*/
+.bk-tour, .bk-photo{
+	background-color: #000000;
+}
+.title-tour, .title-photo{
+	font-family: Sen;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 14px;
+	text-transform: uppercase;
+    color: #000000; /* Unfortunately you can't use transparent here … */
+    text-shadow:
+     -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff
+}
+.title-individual-tour{
+	font-weight: bolder;
+}
+.tour-date{
+	font-size: 20px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+.font-yellow{
+	color: #F9D536 !important;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.border-bottom{
+	border-bottom: 1px solid rgb(249 213 54 / 30%) !important;
+}
+/*
+SECTION VIDEOS
+*/
+.bk-videos, .bk-subscribe{
+	background-color: rgba(0, 0, 0, 0.8) ;
+}
+.owl-carousel .owl-video-tn {
+  background-size: cover;
+  padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+
+.owl-video-frame {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.owl-video-frame iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  display: inline-block;
+}
+
+.owl-dot span {
+  width: 11px;
+  height: 11px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: block;
+  margin: 5px 3px;
+}
+
+.owl-dot.active span {
+  background-color: #000;
+}
+.owl-item{
+	opacity: 0.5;
+}
+.owl-item.active{
+	opacity:  1;
+}
+.title-video-album{
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 50px;
+}
+.fa-caret-left, .fa-caret-right{
+	color: #F9D536;
+	font-size: 45px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+	padding: 0 15px !important;
+}
+/*
+SECTION STORE
+*/
+.bk-store{
+	background-color: #F9D536;
+}
+.title-store{
+	font-family: Sen;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 84px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 14px;
+	text-transform: uppercase;
+    color: #F9D536; /* Unfortunately you can't use transparent here … */
+    text-shadow:
+     -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000
+}
+.title-store-product{
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 25px;
+	/* or 96% */
+
+	text-transform: uppercase;
+}
+.price{
+	font-size: 20px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+/*
+SECTION GALLERY
+*/
+/* For displaying 3 columns on tablet */
+@media only screen and (max-width: 800px) {
+ .gallery-columns-5 .gallery-item {
+     width: 33%;
+ }
+}
+
+/* For displaying single column on mobile */
+@media only screen and (max-width: 480px) {
+ .gallery-columns-5 .gallery-item {
+     width: 100%;
+ }
+}
+
+.gallery-columns-5 .gallery-item:nth-child(5n+1) {
+     clear: none;
+}
+/*
+SECTION SUBSCRIBE
+*/
+.form-control{
+	background-color: transparent !important;
+	border: none;
+	border-bottom: 1px solid #F9D536;
+	border-radius: 0;
+	color: #F9D536;
+}
+.form-control::placeholder {
+  color: #F9D536;
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #F9D536;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color: #F9D536;
+}
+select{
+	color: #F9D536;
+	background-image: url("img/arrow-select.png");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+}
+select option{
+	background-color: #000000;
+}
+select:first-child{
+	color: #F9D536;
+}
+.form-control:first-child:focus{
+	color: #F9D536;
+	border-color: transparent;
+	border-bottom: 1px solid #F9D536;
+	box-shadow:  none;
+}
+.form-check{
+	padding-left: 0;
+}
+.wpcf7-list-item.first{
+	margin-left: 0;
+}
+.wpcf7-list-item-label{
+	color: rgba(250, 223, 70, 1);
+}
+.btn-submit:hover{
+	color: #000000;
+}
+.hvr-border-fade{
+	box-shadow: none;
+}
+.hvr-border-fade:active, .hvr-border-fade:focus, .hvr-border-fade:hover{
+	box-shadow: inset 0 0 0 4px #000000, 0 0 1px rgb(0 0 0 / 0%);
+}
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output{
+	color: red;
+}
+.footer{
+	background-color: #000000;
+}
+.footer span{
+	padding-right: 20px;
 }
 /*
 MEDIA QUERIES
@@ -206,6 +441,16 @@ MEDIA QUERIES
 	}
 	.align-self-end.first{
 		padding-left: 6em;
+	}
+	.owl-item.active{
+		width: 700px !important;
+	}
+	.owl-nav{
+		position: absolute;
+    	bottom: -18%;
+	}
+	.footer span{
+		padding-right: 50px;
 	}
 }
 @media(max-width: 1199px) and (min-width: 1024px){
@@ -243,3 +488,21 @@ MEDIA QUERIES
 		padding-left: 0;
 	}
 } 
+@media(max-width: 414px){
+	.title-carousel {
+		font-size: 25px;
+	}
+	.title-white-bk-transparent {
+		font-size: 30px;
+	}
+	.title-tour, .title-photo {
+		font-size: 30px;
+	}
+	ol, ul {
+	    padding-left: 1rem;
+	}
+	.wpcf7-list-item{
+		margin-left: 0 !important;
+		padding-top: 10px;
+	}
+}

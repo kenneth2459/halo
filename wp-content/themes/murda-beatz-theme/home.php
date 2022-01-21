@@ -1,4 +1,9 @@
 <?php get_header(); ?>
 	<?php require('home-sections/home-carousel.php'); ?>
 	<?php require('home-sections/home-albums.php'); ?>
+	<?php require('home-sections/home-tour.php'); ?>
+	<?php require('home-sections/home-videos.php'); ?>
+	<?php require('home-sections/home-store.php'); ?>
+	<?php require('home-sections/home-photos.php'); ?>
+	<?php require('home-sections/home-subscribe.php'); ?>
 <?php get_footer(); ?>

@@ -8,12 +8,24 @@
 	<?php }	?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-	<meta name=”title” content=”<?php wp_title('|',true,'right'); ?>  <?php bloginfo('name') ?> ” />
-	<meta name="description" content= "Progrentis ejemplo"
+	<meta name=”title” content="<?php wp_title('|',true,'right'); ?>  <?php bloginfo('name') ?>"/>
+	<meta name="description" content= "<?php bloginfo('description'); ?>" />
 	<meta name="robots" content="Index,Follow">
 	<meta name="Author" content="">
 	<meta name="Generator" content="Wordpress">
 	<meta name="Lenguage" content="Es">
+
+	<meta property="og:type" content="Music" />
+	<meta property="og:title" content="<?php bloginfo('name'); ?>"/>
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:url" content="http://localhost/halo/" />
+	<meta property="og:image" content="http://localhost/halo/wp-content/uploads/2022/01/logo-murda.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@digitalocean" />
+	<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+	<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
+	<meta name="twitter:image" content="http://localhost/halo/wp-content/uploads/2022/01/logo-murda.png" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">

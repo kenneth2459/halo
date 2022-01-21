@@ -7,7 +7,7 @@
 					Murda Beatz’ Quarantine Kit Sample Pack
 				</h1>
 				<div class="margin-top-lg">
-					<a href="" class="btn btn-link btn-black font-sen uppercase hvr-outline-out">
+					<a id="scroll-button" href="#target" class="btn btn-link btn-black font-sen uppercase hvr-outline-out scroll">
 						Listen now
 					</a>
 				</div>
