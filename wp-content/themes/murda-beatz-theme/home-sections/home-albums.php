@@ -9,7 +9,7 @@
 			<div class="col-lg-6">
 				<?php query_posts('post_type=albums&posts_per_page=1') ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<div class="text-center">
+					<div class="text-center wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
 						<?php the_post_thumbnail('full', array ( "class"=>"img-fluid" ) ); ?>
 					</div>
 				<?php endwhile; ?>
