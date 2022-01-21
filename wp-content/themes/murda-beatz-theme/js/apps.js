@@ -23,7 +23,6 @@ jQuery("#button-scroll").click(function() {
         responsive:{
         480:{
             items:1,
-            nav:false
         },
         }
     })
